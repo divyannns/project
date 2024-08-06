@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="container">
+        <form id="userForm">
+            <label>First Name:</label><input type="text" id="firstName" required><span class="error" id="errorFirstName"></span><br>
+            <label>Last Name:</label><input type="text" id="lastName" required><span class="error" id="errorLastName"></span><br>
+            <label>Mobile No:</label><input type="text" id="mobileNo" required><span class="error" id="errorMobileNo"></span><br>
+            <label>Email:</label><input type="email" id="email" required><span class="error" id="errorEmail"></span><br>
+            <label>Street:</label><input type="text" id="street"><br>
+            <label>City:</label><input type="text" id="city"><br>
+            <label>State:</label><input type="text" id="state"><br>
+            <label>Country:</label><input type="text" id="country"><br>
+            <label>Login ID:</label><input type="text" id="loginId" required><span class="error" id="errorLoginId"></span><br>
+            <label>Password:</label><input type="password" id="password" required><span class="error" id="errorPassword"></span><br>
+            <button type="button" id="saveButton">Save</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
