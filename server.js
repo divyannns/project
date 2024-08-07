@@ -17,8 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
 
-const dbURI = `mongodb+srv://${username}:${password}@cluster0.yjmj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 `; 
-mongoose.connect(dbURI);
+mongoose.connect = (`mongodb+srv://${username}:${password}@cluster0.yjmj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 `); 
+
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
